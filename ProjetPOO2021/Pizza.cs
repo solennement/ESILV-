@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProjetPOO
+namespace ProjetPOO2021
 {
     class Pizza
     {
-        string type;
-        string taille;
+        private string type;
+        private string taille;
 
         public Pizza(string type, string taille)
         {

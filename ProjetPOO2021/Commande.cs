@@ -8,11 +8,11 @@ namespace ProjetPOO2021
 {
     class Commande : IPerte
     {
-        int no_de_commande;
-        DateTime date_heure;
-        List<Nourriture> items;
-        string nom_commis;
-        string nom_client;
+        private int no_de_commande;
+        private DateTime date_heure;
+        private List<Nourriture> items;
+        private string nom_commis;
+        private string nom_client;
 
         public Commande(int no_de_commande, DateTime date_heure, List<Nourriture> items, string nom_commis, string nom_client)
         {
@@ -31,6 +31,11 @@ namespace ProjetPOO2021
                 liste += n.ToString();
             }
             return liste;
+        }
+
+        public bool EstPerte() /// pas fini
+        {
+            return true;
         }
     }
 }

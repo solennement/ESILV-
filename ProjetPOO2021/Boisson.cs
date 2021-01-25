@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProjetPOO
+namespace ProjetPOO2021
 {
     class Boisson : Produits_Annexes
     {
-        float volume;
+        private float volume;
 
         public Boisson(string prix, string nom, float volume): base(prix, nom)
         {

@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProjetPOO
+namespace ProjetPOO2021
 {
     class Nourriture
     {
-        List<Pizza> liste_p;
-        List<Produits_Annexes> liste_a;
+        private List<Pizza> liste_p;
+        private List<Produits_Annexes> liste_a;
 
         public Nourriture(List<Pizza> liste_p, List<Produits_Annexes> liste_a)
         {

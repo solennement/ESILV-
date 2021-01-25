@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProjetPOO
+namespace ProjetPOO2021
 {
     class Livreur
     {
-        int no_de_livreur;
-        int nb_de_livreur;
+        private int no_de_livreur;
+        private int nb_de_livreur;
 
         public Livreur(int no_de_livreur, int nb_de_livreur)
         {

@@ -5,17 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;
 
-namespace ProjetPOO
+namespace ProjetPOO2021
 {
-    class Client : INotifyPropertyChanged
+    class Client
     {
-        string nom;
-        string prenom;
-        DateTime date_premiere_commande;
-        string tel;
-        string adresse;
-        public event PropertyChangedEventHandler PropertyChanged;
-
+        private string nom;
+        private string prenom;
+        private DateTime date_premiere_commande;
+        private string tel;
+        private string adresse;
+ 
         public Client(string nom, string prenom, DateTime date_premiere_commande, string tel, string adresse)
         {
             this.nom = nom;
@@ -29,17 +28,5 @@ namespace ProjetPOO
         {
             return this.nom + " " + this.prenom + " " + this.date_premiere_commande + " "+ this.tel + " " + this.adresse;
         }
-
-        protected void OnPropertyChanged(string name)
-        {
-            PropertyChangedEventHandler handler = PropertyChanged;
-            if (handler != null)
-            {
-                handler(this, new PropertyChangedEventArgs(name));
-            }
-        }
-
-
-
     }
 }
