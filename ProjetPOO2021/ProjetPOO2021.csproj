@@ -43,6 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App.xaml.cs" />
+    <Compile Include="Boisson.cs" />
+    <Compile Include="Client.cs" />
+    <Compile Include="Commande.cs" />
+    <Compile Include="Commis.cs" />
+    <Compile Include="Facture.cs" />
+    <Compile Include="IPerte.cs" />
+    <Compile Include="Livreur.cs" />
+    <Compile Include="MainWindow.xaml.cs" />
+    <Compile Include="Nourriture.cs" />
+    <Compile Include="Pizza.cs" />
+    <Compile Include="Produits_Annexes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
