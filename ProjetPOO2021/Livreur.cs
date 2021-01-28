@@ -4,23 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProjetPOO2021
+namespace ProjetFinalPoo
 {
-    class Livreur
+    class Livreur : Personne
     {
-        private int no_de_livreur;
-        private int nb_de_livreur;
+        string moyen_transport;
 
-        public Livreur(int no_de_livreur, int nb_de_livreur)
+        public Livreur(string nom, string prenom, string tel, string adresse, string moyen_transport): base(nom, prenom, tel, adresse)
         {
-            this.no_de_livreur = no_de_livreur;
-            this.nb_de_livreur = nb_de_livreur;
+            this.moyen_transport = moyen_transport;
         }
 
-        public override string ToString()
+        public string Moyen_transport
         {
-            return this.no_de_livreur + " " + this.nb_de_livreur;
+            get { return this.moyen_transport; }
+            set { this.moyen_transport = value; }
         }
+
 
     }
 }

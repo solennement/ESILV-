@@ -4,24 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProjetPOO2021
+namespace ProjetFinalPoo
 {
-    class Commis
+    class Commis : Personne
     {
-        private DateTime date_embauche;
-        private int nb_perte_commande;
-        private int nb_de_commis;
+        string date_embauche;
 
-        public Commis(DateTime date_embauche, int nb_perte_commande, int nb_de_commis)
+        public Commis(string nom, string prenom,string tel, string adresse, string date_embauche): base(nom, prenom, tel, adresse)
         {
             this.date_embauche = date_embauche;
-            this.nb_perte_commande = nb_perte_commande;
-            this.nb_de_commis = nb_de_commis;
         }
 
-        public override string ToString()
+        public string Date_embauche
         {
-            return this.date_embauche + " " + this.nb_perte_commande + " " + this.nb_de_commis;
+            get { return this.date_embauche; }
+            set { this.date_embauche = value; }
         }
     }
 }

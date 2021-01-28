@@ -16,23 +16,23 @@ using System.Windows.Shapes;
 namespace ProjetFinalPoo
 {
     /// <summary>
-    /// Logique d'interaction pour MainWindow.xaml
+    /// Logique d'interaction pour CommandeClient.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class CommandeClient : Page
     {
-        public MainWindow()
+        public CommandeClient()
         {
             InitializeComponent();
         }
 
-        private void ClientEffectif(object sender, RoutedEventArgs e)
+        private void NouvelleCommande(object sender, RoutedEventArgs e)
         {
-            Main.Content = new EffectifClient();
+            Main.Content = new NouvelleCommande();
         }
 
-        private void Commande(object sender, RoutedEventArgs e)
+        private void EnCours(object sender, RoutedEventArgs e)
         {
-            Main.Content = new CommandeClient();
+            Main.Content = new EnCours();
         }
     }
 }

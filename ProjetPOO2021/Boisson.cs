@@ -4,20 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProjetPOO2021
+namespace ProjetFinalPoo
 {
     class Boisson : Produits_Annexes
     {
-        private float volume;
+        float volume;
 
-        public Boisson(string prix, string nom, float volume): base(prix, nom)
+        public Boisson(string nom, float volume, float prix) : base(prix, nom)
         {
             this.volume = volume;
         }
 
-        public override string ToString()
+        public float Taille
         {
-            return this.volume + " ";
+            get { return this.volume; }
+            set { this.volume = value; }
         }
     }
 }

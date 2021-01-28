@@ -16,23 +16,28 @@ using System.Windows.Shapes;
 namespace ProjetFinalPoo
 {
     /// <summary>
-    /// Logique d'interaction pour MainWindow.xaml
+    /// Logique d'interaction pour LivreurPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class LivreurPage : Page
     {
-        public MainWindow()
+        public LivreurPage()
         {
             InitializeComponent();
         }
 
-        private void ClientEffectif(object sender, RoutedEventArgs e)
+        private void Enregistrer(object sender, RoutedEventArgs e)
         {
-            Main.Content = new EffectifClient();
+            Main.Content = new EnregistrementLivreur();
         }
 
-        private void Commande(object sender, RoutedEventArgs e)
+        private void Supprimer(object sender, RoutedEventArgs e)
         {
-            Main.Content = new CommandeClient();
+            Main.Content = new SuppressionLivreur();
+        }
+
+        private void Modifier(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new ModificationLivreur();
         }
     }
 }

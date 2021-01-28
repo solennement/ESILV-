@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProjetPOO2021
+namespace ProjetFinalPoo
 {
     class Nourriture
     {
-        private List<Pizza> liste_p;
-        private List<Produits_Annexes> liste_a;
+        List<Pizza> liste_p;
+        List<Produits_Annexes> liste_a;
 
         public Nourriture(List<Pizza> liste_p, List<Produits_Annexes> liste_a)
         {
@@ -17,18 +17,5 @@ namespace ProjetPOO2021
             this.liste_a = liste_a;
         }
 
-        public override string ToString()
-        {
-            string liste = "";
-            foreach(Pizza p in liste_p)
-            {
-                liste += p + " ";
-            }
-            foreach(Produits_Annexes a in liste_a)
-            {
-                liste += a + " ";
-            }
-            return liste;
-        }
     }
 }

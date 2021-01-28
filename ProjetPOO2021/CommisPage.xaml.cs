@@ -16,23 +16,29 @@ using System.Windows.Shapes;
 namespace ProjetFinalPoo
 {
     /// <summary>
-    /// Logique d'interaction pour MainWindow.xaml
+    /// Logique d'interaction pour CommisPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class CommisPage : Page
     {
-        public MainWindow()
+        public CommisPage()
         {
             InitializeComponent();
         }
 
-        private void ClientEffectif(object sender, RoutedEventArgs e)
+        private void Enregistrer(object sender, RoutedEventArgs e)
         {
-            Main.Content = new EffectifClient();
+            Main.Content = new EnregistrementCommis();
         }
 
-        private void Commande(object sender, RoutedEventArgs e)
+        private void Supprimer(object sender, RoutedEventArgs e)
         {
-            Main.Content = new CommandeClient();
+            Main.Content = new SuppressionCommis();
         }
+
+        private void Modifier(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new ModificationCommis();
+        }
+
     }
 }

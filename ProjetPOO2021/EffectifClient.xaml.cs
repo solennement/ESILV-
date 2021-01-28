@@ -16,23 +16,28 @@ using System.Windows.Shapes;
 namespace ProjetFinalPoo
 {
     /// <summary>
-    /// Logique d'interaction pour MainWindow.xaml
+    /// Logique d'interaction pour EffectifClient.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class EffectifClient : Page
     {
-        public MainWindow()
+        public EffectifClient()
         {
             InitializeComponent();
         }
 
-        private void ClientEffectif(object sender, RoutedEventArgs e)
+        private void Client(object sender, RoutedEventArgs e)
         {
-            Main.Content = new EffectifClient();
+            Main.Content = new Clientpage();
         }
 
-        private void Commande(object sender, RoutedEventArgs e)
+        private void Livreur(object sender, RoutedEventArgs e)
         {
-            Main.Content = new CommandeClient();
+            Main.Content = new LivreurPage();
+        }
+
+        private void Commis(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new CommisPage();
         }
     }
 }

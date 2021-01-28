@@ -16,23 +16,18 @@ using System.Windows.Shapes;
 namespace ProjetFinalPoo
 {
     /// <summary>
-    /// Logique d'interaction pour MainWindow.xaml
+    /// Logique d'interaction pour ModificationClient.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ModificationClient : Page
     {
-        public MainWindow()
+        public ModificationClient()
         {
             InitializeComponent();
         }
 
-        private void ClientEffectif(object sender, RoutedEventArgs e)
+        private void ModifierClient(object sender, RoutedEventArgs e)
         {
-            Main.Content = new EffectifClient();
-        }
 
-        private void Commande(object sender, RoutedEventArgs e)
-        {
-            Main.Content = new CommandeClient();
         }
     }
 }

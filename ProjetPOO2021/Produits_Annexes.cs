@@ -4,22 +4,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProjetPOO2021
+namespace ProjetFinalPoo
 {
     abstract class Produits_Annexes
     {
-        protected string prix;
-        protected string nom;
+        float prix;
+        string nom;
 
-        public Produits_Annexes(string prix, string nom)
+        public string Nom
+        {
+            get { return this.nom; }
+            set { this.nom = value; }
+        }
+
+        public float Prix
+        {
+            get { return this.prix; }
+            set { this.prix = value; }
+        }
+
+        public Produits_Annexes(float prix, string nom)
         {
             this.prix = prix;
             this.nom = nom;
         }
 
-        public override string ToString()
-        {
-            return this.prix + " " + this.nom;
-        }
     }
 }

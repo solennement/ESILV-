@@ -1,0 +1,33 @@
+﻿<Page x:Class="ProjetFinalPoo.SuppressionClient"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ProjetFinalPoo"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="SuppressionClient">
+
+    <Grid>
+        <DataGrid Name ="DataGrid" Margin="62,153,110.6,34">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Nom" Binding="{Binding Path=Nom}"/>
+                <DataGridTextColumn Header="Prénom" Binding="{Binding Path=Prenom}"/>
+                <DataGridTextColumn Header="Date Première Commande" Binding="{Binding Path=Date_premiere_commande}"/>
+                <DataGridTextColumn Header="Téléphone" Binding="{Binding Path=Tel}"/>
+                <DataGridTextColumn Header="Adresse" Binding="{Binding Path=Adresse}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Supprimer" HorizontalAlignment="Left" Margin="511,123,0,0" VerticalAlignment="Top" Width="75" Click="SupprimerClient"/>
+        <Label Content="Nom : " HorizontalAlignment="Left" Margin="24,21,0,0" VerticalAlignment="Top"/>
+        <Label Content="Prénom :" HorizontalAlignment="Left" Margin="24,73,0,0" VerticalAlignment="Top"/>
+        <Label Content="Date Première Comande :" HorizontalAlignment="Left" Margin="246,25,0,0" VerticalAlignment="Top"/>
+        <Label Content ="Adresse : " HorizontalAlignment="Left" Margin="511,73,0,0" VerticalAlignment="Top" Height="49" Width="65"/>
+        <TextBox Name="tadresse" HorizontalAlignment="Left" Height="23" Margin="600,75,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Télephone : " HorizontalAlignment="Left" Margin="266,84,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.839,0.42"/>
+        <TextBox Name="tnom" HorizontalAlignment="Left" Height="23" Margin="83,25,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="tprenom" HorizontalAlignment="Left" Height="23" Margin="83,77,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="ttel" HorizontalAlignment="Left" Height="23" Margin="345,84,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.063,0.468"/>
+        <TextBox Name="tdate" HorizontalAlignment="Left" Height="23" Margin="397,30,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+    </Grid>
+</Page>

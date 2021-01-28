@@ -1,0 +1,18 @@
+﻿<Page x:Class="ProjetFinalPoo.CommandeClient"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ProjetFinalPoo"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="CommandeClient">
+
+    <Grid>
+        <StackPanel Orientation="Horizontal" Height="35" VerticalAlignment="Top">
+            <Button Content="Enregistrer" Click="NouvelleCommande"/>
+            <Button Content="Commande En Cours" Click="EnCours" Margin="20,0,0,0"/>
+        </StackPanel>
+        <Frame Name="Main" Margin="0,35,0,0"/>
+    </Grid>
+</Page>

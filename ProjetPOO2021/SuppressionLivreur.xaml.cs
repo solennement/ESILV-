@@ -16,23 +16,18 @@ using System.Windows.Shapes;
 namespace ProjetFinalPoo
 {
     /// <summary>
-    /// Logique d'interaction pour MainWindow.xaml
+    /// Logique d'interaction pour SuppressionLivreur.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class SuppressionLivreur : Page
     {
-        public MainWindow()
+        public SuppressionLivreur()
         {
             InitializeComponent();
         }
 
-        private void ClientEffectif(object sender, RoutedEventArgs e)
+        private void SupprimerLivreur(object sender, RoutedEventArgs e)
         {
-            Main.Content = new EffectifClient();
-        }
 
-        private void Commande(object sender, RoutedEventArgs e)
-        {
-            Main.Content = new CommandeClient();
         }
     }
 }
