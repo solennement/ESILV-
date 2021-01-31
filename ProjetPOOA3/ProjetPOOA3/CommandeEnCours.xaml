@@ -1,0 +1,35 @@
+﻿<Window x:Class="ProjetPOOA3.CommandeEnCours"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjetPOOA3"
+        mc:Ignorable="d"
+        Title="CommandeEnCours" Height="450" Width="800">
+    <Grid>
+        <ListView x:Name="list7" Canvas.Left="101" Canvas.Top="149" ItemsSource="{Binding listeco, Mode= TwoWay}" Margin="56,172,36.6,10">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Numéro" Width="100" DisplayMemberBinding="{Binding Numero, Mode=TwoWay}" />
+                    <GridViewColumn Header="Date" Width="100" DisplayMemberBinding="{Binding Date, Mode=TwoWay}" />
+                    <GridViewColumn Header="Heure" Width="100" DisplayMemberBinding="{Binding Heure, Mode=TwoWay}" />
+                    <GridViewColumn Header="Nom Commis" Width="100" DisplayMemberBinding="{Binding Nomc, Mode=TwoWay}" />
+                    <GridViewColumn Header="Nom Client" Width="100" DisplayMemberBinding="{Binding Nomcl, Mode=TwoWay}" />
+                    <GridViewColumn Header="Etape" Width="100" DisplayMemberBinding="{Binding Livraison, Mode=TwoWay}" />
+                    <GridViewColumn Header="Etat" Width="100" DisplayMemberBinding="{Binding Etat, Mode=TwoWay}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="Fermer la commande" HorizontalAlignment="Left" Margin="637,102,0,0" VerticalAlignment="Top" Width="120" Height="19" Click="Fermer"/>
+        <TextBox x:Name="nco" HorizontalAlignment="Left" Height="23" Margin="159,73,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="436,73,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Numéro de Commande" HorizontalAlignment="Left" Margin="10,73,0,0" VerticalAlignment="Top"/>
+        <Label Content="Numéro de Livreur" HorizontalAlignment="Left" Margin="304,70,0,0" VerticalAlignment="Top"/>
+        <Button Content="En Préparation" HorizontalAlignment="Left" Margin="637,70,0,0" VerticalAlignment="Top" Width="118" Height="20" Click="Preparation"/>
+        <Button Content="En livraison" HorizontalAlignment="Left" Margin="637,134,0,0" VerticalAlignment="Top" Width="120" Height="17" Click="Livraison"/>
+        <Button Content="Encaissée" HorizontalAlignment="Left" Margin="264,134,0,0" VerticalAlignment="Top" Width="91" Click="Encaisse"/>
+        <Button Content="A perte" HorizontalAlignment="Left" Margin="117,134,0,0" VerticalAlignment="Top" Width="91" Click="Perte"/>
+        <Label Content="Etat :" HorizontalAlignment="Left" Margin="56,131,0,0" VerticalAlignment="Top"/>
+        <Label Content="Etape :" HorizontalAlignment="Left" Margin="637,34,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

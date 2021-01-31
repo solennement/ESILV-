@@ -1,0 +1,22 @@
+﻿<Window x:Class="ProjetPOOA3.Nouveau"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjetPOOA3"
+        mc:Ignorable="d"
+        Title="Nouveau" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="nomPersonne" HorizontalAlignment="Left" Height="23" Margin="156,106,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="prenomPersonne" HorizontalAlignment="Left" Height="23" Margin="361,103,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="date" HorizontalAlignment="Left" Height="23" Margin="540,103,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tel" HorizontalAlignment="Left" Height="23" Margin="458,166,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="adresse" HorizontalAlignment="Left" Height="23" Margin="178,166,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="Fin" Content="Changer" HorizontalAlignment="Left" Margin="327,242,0,0" VerticalAlignment="Top" Width="75" Click="Change"/>
+        <Label Content="Nom :" HorizontalAlignment="Left" Margin="114,103,0,0" VerticalAlignment="Top"/>
+        <Label Content="Prenom :" HorizontalAlignment="Left" Margin="305,106,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.026,-0.629"/>
+        <Label Content="Téléphone :" HorizontalAlignment="Left" Margin="389,166,0,0" VerticalAlignment="Top"/>
+        <Label Content="Adresse :" HorizontalAlignment="Left" Margin="114,166,0,0" VerticalAlignment="Top"/>
+        <Label Content="Date :" HorizontalAlignment="Left" Margin="486,103,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

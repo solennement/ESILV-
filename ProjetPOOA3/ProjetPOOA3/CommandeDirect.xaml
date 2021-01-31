@@ -1,0 +1,13 @@
+﻿<Window x:Class="ProjetPOOA3.CommandeDirect"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjetPOOA3"
+        mc:Ignorable="d"
+        Title="Commande" Height="450" Width="800">
+    <Grid>
+        <Button Content="Enregistrer" Click="NouvelleCommande" Height="138" Margin="59,0,475.6,140" VerticalAlignment="Bottom"/>
+        <Button Content="Commande En Cours" Click="EnCours" Margin="473,141,75.6,141" RenderTransformOrigin="0.404,0.562"/>
+    </Grid>
+</Window>
